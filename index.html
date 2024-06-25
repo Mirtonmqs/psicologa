@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Meu site</title>
 </head>
@@ -23,10 +23,11 @@
       <nav class="menu-desktop">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Quem Sou</a></li>
+          <li><a href="#quem-sou">Quem Sou</a></li>
           <li><a href="#">Serviços</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contatos</a></li>
+          <li><a href="#">Localização</a></li>
         </ul>
       </nav>
     </div>
@@ -46,44 +47,113 @@
               </a>
             </div>
           </div>
-          <div class="primeira-imagem">
-            <img src="/img/1bf879f6-cbe5-4263-b870-b08425439b7c.jpeg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="quem-sou" class="quem-sou">
+      <div class="interface">
+        <div class="flex">
+          <div class="imagem-quem-sou">
+            <img src="/img/1bf879f6-cbe5-4263-b870-b08425439b7c.jpeg" alt="Sua imagem">
+          </div>
+          <div class="texto-quem-sou">
+            <h2>Quem Sou</h2>
+            <p>Sou [Seu Nome], psicóloga com [X] anos de experiência em ajudar indivíduos a encontrar equilíbrio e bem-estar em suas vidas. Minha abordagem é centrada na pessoa e visa criar um espaço seguro e acolhedor onde meus clientes possam explorar seus sentimentos e desafios.</p>
+            <p>Minha missão é guiá-lo em sua jornada de autoconhecimento e crescimento pessoal, promovendo a saúde mental e emocional. Acredito que cada indivíduo tem o potencial para alcançar uma vida plena e satisfatória.</p>
           </div>
         </div>
       </div>
     </section>
+
     <section class="especialidades">
       <div class="interface">
         <h2>MINHAS <span>ESPECIALIDADES.</span></h2>
         <div class="flex">
-          <div class="especialidades-box">
+          <a href="#desenvolvimento-pessoal" class="especialidades-box">
             <h3>Desenvolvimento Pessoal</h3>
-          </div>
-          <div class="especialidades-box">
+          </a>
+          <a href="#escolha-profissional" class="especialidades-box">
             <h3>Escolha Profissional</h3>
-          </div>
-          <div class="especialidades-box">
+          </a>
+          <a href="#dificuldade-em-relacionamentos" class="especialidades-box">
             <h3>Dificuldade em Relacionamentos</h3>
-          </div>
-          <div class="especialidades-box">
+          </a>
+          <a href="#depressao" class="especialidades-box">
             <h3>Depressão</h3>
-          </div>
-          <div class="especialidades-box">
+          </a>
+          <a href="#ansiedade" class="especialidades-box">
             <h3>Ansiedade</h3>
-          </div>
-          <div class="especialidades-box">
+          </a>
+          <a href="#panico" class="especialidades-box">
             <h3>Pânico</h3>
-          </div>
-          <div class="especialidades-box">
-            <h3>Transtornos alimentares</h3>
-          </div>
-          <div class="especialidades-box">
+          </a>
+          <a href="#transtornos-alimentares" class="especialidades-box">
+            <h3>Transtornos Alimentares</h3>
+          </a>
+          <a href="#traumas-fobias-luto" class="especialidades-box">
             <h3>Traumas | Fobias | Luto</h3>
-          </div>
+          </a>
         </div>
       </div>
     </section>
-    
+
+    <!-- Descrições das Especialidades -->
+    <section id="desenvolvimento-pessoal" class="descricao-especialidade">
+      <div class="interface">
+        <h2>Desenvolvimento Pessoal</h2>
+        <p>Ajudamos você a identificar e desenvolver suas habilidades e potenciais, melhorando sua qualidade de vida e alcance de objetivos pessoais e profissionais.</p>
+      </div>
+    </section>
+
+    <section id="escolha-profissional" class="descricao-especialidade">
+      <div class="interface">
+        <h2>Escolha Profissional</h2>
+        <p>Orientação para tomada de decisões relacionadas à carreira, auxiliando na escolha da profissão que mais se alinha aos seus interesses, habilidades e valores.</p>
+      </div>
+    </section>
+
+    <section id="dificuldade-em-relacionamentos" class="descricao-especialidade">
+      <div class="interface">
+        <h2>Dificuldade em Relacionamentos</h2>
+        <p>Trabalhamos com você para melhorar a comunicação, resolver conflitos e fortalecer vínculos em relacionamentos pessoais e profissionais.</p>
+      </div>
+    </section>
+
+    <section id="depressao" class="descricao-especialidade">
+      <div class="interface">
+        <h2>Depressão</h2>
+        <p>Oferecemos apoio para superar a depressão, trabalhando em conjunto para desenvolver estratégias eficazes de enfrentamento e recuperação.</p>
+      </div>
+    </section>
+
+    <section id="ansiedade" class="descricao-especialidade">
+      <div class="interface">
+        <h2>Ansiedade</h2>
+        <p>Auxiliamos no gerenciamento da ansiedade, ensinando técnicas para reduzir o estresse e melhorar o bem-estar geral.</p>
+      </div>
+    </section>
+
+    <section id="panico" class="descricao-especialidade">
+      <div class="interface">
+        <h2>Pânico</h2>
+        <p>Trabalhamos para entender e controlar os ataques de pânico, proporcionando ferramentas para lidar com essas crises de forma eficaz.</p>
+      </div>
+    </section>
+
+    <section id="transtornos-alimentares" class="descricao-especialidade">
+      <div class="interface">
+        <h2>Transtornos Alimentares</h2>
+        <p>Oferecemos suporte para tratamento de transtornos alimentares, ajudando a desenvolver uma relação saudável com a comida e o corpo.</p>
+      </div>
+    </section>
+
+    <section id="traumas-fobias-luto" class="descricao-especialidade">
+      <div class="interface">
+        <h2>Traumas | Fobias | Luto</h2>
+        <p>Auxiliamos no processo de superação de traumas, medos intensos e perdas significativas, promovendo a cura e a resiliência.</p>
+      </div>
+    </section>
   </main>
 </body>
 

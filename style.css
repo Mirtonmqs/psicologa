@@ -22,6 +22,7 @@ body {
 .flex {
   display: flex;
   justify-content: space-between; /* Ajusta o espaçamento entre os elementos */
+  flex-wrap: wrap; /* Permite que os elementos se ajustem em múltiplas linhas, se necessário */
 }
 
 /* Estilo do cabeçalho */
@@ -32,7 +33,7 @@ header {
 .logo img {
   max-width: 150px;
   height: auto;
-  margin-right: 500px;
+  margin-right: 300px;
 }
 
 header .interface {
@@ -81,6 +82,7 @@ header nav ul li {
   align-items: center;
   text-decoration: none;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .btn-agende:hover {
@@ -106,7 +108,7 @@ section.topo-do-site .interface {
 
 section.topo-do-site .txt-topo-site {
   flex: 1;
-  max-width: 65%; /* Ajuste a largura máxima */
+  max-width: 90%; /* Ajuste a largura máxima */
 }
 
 section.topo-do-site .txt-topo-site h1 {
@@ -120,18 +122,7 @@ section.topo-do-site .txt-topo-site p {
   color: #666;
   line-height: 1.6;
   margin-bottom: 20px;
-}
-
-section.topo-do-site .primeira-imagem {
-  flex: 1;
-  text-align: right;
-  max-width: 30%; /* Ajuste a largura máxima */
-}
-
-section.topo-do-site .primeira-imagem img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+  text-align: justify; /* Justifica o texto para alinhamento nas bordas laterais */
 }
 
 .topo-do-site .txt-topo-site p {
@@ -139,11 +130,56 @@ section.topo-do-site .primeira-imagem img {
   margin: 40px 0;
 }
 
+/* Estilo da seção Quem Sou */
+section.quem-sou {
+  padding: 40px 4%;
+  background-color: #FFF0E9; 
+}
+
+section.quem-sou .interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+section.quem-sou .imagem-quem-sou {
+  flex: 1;
+  max-width: 20%; /* Ajuste a largura máxima */
+  margin-right: 40px; /* Adiciona espaço entre a imagem e o texto */
+}
+
+section.quem-sou .imagem-quem-sou img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+section.quem-sou .texto-quem-sou {
+  flex: 2;
+  max-width: 60%; /* Ajuste a largura máxima */
+}
+
+section.quem-sou .texto-quem-sou h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+section.quem-sou .texto-quem-sou p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify; 
+}
+
 /* Minhas especialidades */
 .especialidades {
   padding: 50px 4%;
-  background-color: #E9967A;
+  background-color:#fff;
   width: 100%;
+  margin-top: 60px;
 }
 
 .especialidades h2 {
@@ -153,7 +189,7 @@ section.topo-do-site .primeira-imagem img {
 }
 
 .especialidades h2 span {
-  color: darksalmon;
+  color:chocolate;
 }
 
 .flex {
@@ -164,15 +200,18 @@ section.topo-do-site .primeira-imagem img {
 }
 
 .especialidades-box {
-  background-color: white;
-  border: 1px solid #fff;
-  border-radius: 10px;
-  padding: 5px;
+  flex: 1 1 200px;
+  min-width: 200px; 
+  max-width: 300px; 
+  background-color: #E9967A;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex: 1 1 300px; /* Flex grow, shrink, and basis for responsive design */
-  max-width: 300px;
+  border-radius: 8px; 
+  text-decoration: none;
 }
 
 .especialidades-box h3 {
@@ -183,4 +222,33 @@ section.topo-do-site .primeira-imagem img {
 .especialidades-box:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo da seção "Descrição de Especialidade" */
+.descricao-especialidade {
+  padding: 50px 4%;
+  background-color: #fff;
+}
+
+.descricao-especialidade h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.descricao-especialidade p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.descricao-especialidade .interface {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.descricao-especialidade .interface h2{
+ color:#E9967A;
+
 }
