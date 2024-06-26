@@ -11,6 +11,7 @@
 body {
   background-color: #fff;
   min-height: 100vh;
+  padding-top: 200px;
 }
 
 .interface {
@@ -21,19 +22,24 @@ body {
 
 .flex {
   display: flex;
-  justify-content: space-between; /* Ajusta o espaçamento entre os elementos */
-  flex-wrap: wrap; /* Permite que os elementos se ajustem em múltiplas linhas, se necessário */
+  justify-content: space-between;
+  flex-wrap: wrap; 
 }
 
 /* Estilo do cabeçalho */
 header {
-  padding: 40px 4%;
+  padding: 0px; /* Ajuste o padding conforme necessário */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #FFF0E9;
+  z-index: 1000; 
 }
 
 .logo img {
-  max-width: 150px;
+  max-width: 190px;
   height: auto;
-  margin-right: 300px;
+  margin-right: 320px;
 }
 
 header .interface {
@@ -122,7 +128,9 @@ section.topo-do-site .txt-topo-site p {
   color: #666;
   line-height: 1.6;
   margin-bottom: 20px;
-  text-align: justify; /* Justifica o texto para alinhamento nas bordas laterais */
+  text-align: justify; 
+  position: relative;
+  bottom: 10px;
 }
 
 .topo-do-site .txt-topo-site p {
@@ -132,7 +140,7 @@ section.topo-do-site .txt-topo-site p {
 
 /* Estilo da seção Quem Sou */
 section.quem-sou {
-  padding: 40px 4%;
+  padding: 80px 4%;
   background-color: #FFF0E9; 
 }
 
@@ -204,7 +212,7 @@ section.quem-sou .texto-quem-sou p {
   min-width: 200px; 
   max-width: 300px; 
   background-color: #E9967A;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   display: flex;
   align-items: center;
@@ -245,10 +253,108 @@ section.quem-sou .texto-quem-sou p {
 }
 
 .descricao-especialidade .interface {
-  max-width: 800px;
+  max-width: 1800px;
   margin: 0 auto;
 }
 .descricao-especialidade .interface h2{
  color:#E9967A;
+}
 
+.menu-desktop ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  width: 20px; 
+  margin-right: -190px; 
+}
+
+/* Estilo da seção "Localização" */
+section.localizacao {
+  padding: 50px 4%;
+  background-color: #f5f5f5;
+}
+
+section.localizacao .interface {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+section.localizacao h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+section.localizacao p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+section.localizacao address {
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+section.localizacao address p {
+  margin-bottom: 5px;
+}
+
+section.localizacao .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centraliza verticalmente os itens */
+}
+
+section.localizacao .mapa-imagem {
+  display: flex;
+  flex: 1;
+  justify-content: space-between; /* Distribui os itens horizontalmente */
+}
+
+section.localizacao .mapa-localizacao {
+  flex: 1;
+  margin-right: 20px; /* Espaçamento entre o mapa e a imagem */
+}
+
+section.localizacao .imagem-localizacao {
+  width: 40%; /* Tamanho da imagem ocupando 30% do espaço */
+}
+
+section.localizacao .imagem-localizacao img {
+  width: 500px;
+  height: auto;
+}
+
+/* Estilo para o footer */
+footer {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 0px; /* Espaçamento superior */
+}
+
+/* Estilo para o texto do footer */
+footer p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px; /* Espaçamento inferior entre os parágrafos */
+}
+
+/* Estilo para o link do footer */
+footer a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Estilo para o link do footer quando hover */
+footer a:hover {
+  color: #555;
 }
