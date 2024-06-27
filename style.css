@@ -39,41 +39,41 @@ header {
 .logo img {
   max-width: 190px;
   height: auto;
-  margin-right: 320px;
 }
 
 header .interface {
   display: flex;
   align-items: center;
+  justify-content: space-between; /* Adiciona espaço entre a logo/menu e o botão */
+}
+
+.menu-desktop ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu-desktop ul li {
+  margin-left: 40px;
 }
 
 .menu-desktop ul li a {
   text-decoration: none;
   padding: 1px;
-  margin-left: 10px;
-}
-
-header a {
   color: #7d7d7d;
-  text-decoration: none;
-  display: inline-block;
   transition: 0.2s;
 }
 
-header a:hover {
+.menu-desktop ul li a:hover {
   color: burlywood;
   transform: scale(1.05);
 }
 
-header nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-header nav ul li {
-  display: inline-block;
-  padding: 0 40px;
+.social-icon {
+  width: 20px;
+  margin-left: 10px; 
 }
 
 .btn-agende {
@@ -260,19 +260,6 @@ section.quem-sou .texto-quem-sou p {
  color:#E9967A;
 }
 
-.menu-desktop ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-
-.social-icon {
-  width: 20px; 
-  margin-right: -190px; 
-}
-
 /* Estilo da seção "Localização" */
 section.localizacao {
   padding: 50px 4%;
@@ -328,8 +315,9 @@ section.localizacao .imagem-localizacao {
 }
 
 section.localizacao .imagem-localizacao img {
-  width: 500px;
-  height: auto;
+  width: 680px; /* Define a largura desejada */
+  height: auto; /* Mantém a proporção da imagem */
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
 }
 
 /* Estilo para o footer */
@@ -337,7 +325,7 @@ footer {
   background-color: #f0f0f0;
   padding: 20px 0;
   text-align: center;
-  margin-top: 0px; /* Espaçamento superior */
+  margin-top: 0px; 
 }
 
 /* Estilo para o texto do footer */
@@ -358,3 +346,5 @@ footer a {
 footer a:hover {
   color: #555;
 }
+
+
